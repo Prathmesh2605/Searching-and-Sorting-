@@ -2,7 +2,7 @@
 
 public class BinarySearch {
 
-	static int binarySearch(int array[], int target, int low, int high) {
+	static int binarySearch(int array[], int get, int low, int high) {
 
 		if (high >= low) {
 			int mid = low + (high - low) / 2;
