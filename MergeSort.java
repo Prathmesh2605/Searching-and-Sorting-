@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class MergeSort {
     private int[] array; // input array
-    private int[] newArray; // temporary array for merging
+    private int[] tempArray; // temporary array for merging
 
     public MergeSort(int[] arr) {
         this.array = arr;
