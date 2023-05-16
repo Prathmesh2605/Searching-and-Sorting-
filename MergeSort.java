@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class MergeSort {
+public class MergeSort {
     private int[] array; // input array
     private int[] tempArray; // temporary array for merging
 
@@ -26,6 +26,7 @@ class MergeSort {
             merge(low, mid, high);
         }
     }
+
     // merge two sorted sub-arrays
     private void merge(int low, int mid, int high) {
         // copy the elements of the input array into the temporary array
@@ -55,15 +56,12 @@ class MergeSort {
             k++;
         }
     }
-}
-
-public class Main{
 
     public static void main(String[] args) {
 
-	  Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        //Get the input array from the user
+        // Get the input array from the user
         System.out.print("Enter the size of the array: ");
         int size = scanner.nextInt();
 
@@ -72,7 +70,7 @@ public class Main{
         for (int i = 0; i < size; i++) {
             arr[i] = scanner.nextInt();
         }
-        
+
         // Create an object of MergeSort class
         MergeSort ms = new MergeSort(arr);
 
